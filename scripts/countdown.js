@@ -56,7 +56,7 @@ function showLocalTime(){
         raceTimeUTC = raceTimeUTC.toString() + " UTC";
         var localDate = new Date(raceTimeUTC);
         raceTimes[i].innerHTML= localDate;
-        $("heading-time").text("Race Start Time - Local");
+        $("#heading-time").text("Race Start Time - Local");
     }
 //    for ( racetime in raceTimes)
 //    var raceTimeUTC = $("#race_time").text();

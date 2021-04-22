@@ -87,6 +87,8 @@ img{
     max-width: 100%;
     margin: 0;
     padding: 0;
+    display: block;
+    width: 100%;
 }
 
 table{
@@ -153,6 +155,8 @@ p.attrib{
     border: none;
     border-radius: 5px;
 }
+
+
 @media screen and (max-width: 560px){
     
     .owl-prev{
@@ -163,10 +167,8 @@ p.attrib{
         top: 175px;
     }
     
-        .schedule-table th:nth-child(3) {
-       display: none;
+    .time-btn{
+        margin-top: 0;
     }
-    .schedule-table td:nth-child(3) {
-       display: none;
-    }
+    
 }
