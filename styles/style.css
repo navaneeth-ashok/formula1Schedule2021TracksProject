@@ -155,9 +155,6 @@ p.attrib{
     border: none;
     border-radius: 5px;
 }
-#mobile-sug{
-    display: none;
-}
 
 @media screen and (max-width: 560px){
     
@@ -171,13 +168,6 @@ p.attrib{
     
     .time-btn{
         margin-top: 0;
-    }
-    
-    #mobile-sug{
-        display: block;
-        text-align: center;
-        font-weight: 300;
-        font-style: italic;
     }
     
     ul{

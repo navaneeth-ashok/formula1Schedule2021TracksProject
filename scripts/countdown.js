@@ -2,6 +2,16 @@ startClock();
 $("#reset").attr("disabled", true);
 $("#reset").css("backgroundColor","grey");
 
+
+function requestDesktopSite(){
+ if(document.getElementsByTagName('meta')['viewport'].content=='width= 1200px'){
+  document.getElementsByTagName('meta')['viewport'].content='width= 400px';
+ }else{
+  document.getElementsByTagName('meta')['viewport'].content='width= 1200px';
+ }
+}
+
+
 function raceCountDown(){
     
     var raceTimes = document.getElementsByClassName("race_time");
@@ -78,6 +88,16 @@ $("#localTime").click(function(){
 
 $("#reset").click(function() {
     location.reload();
+});
+
+$("#togglePage").click(function(){
+    requestDesktopSite();
+    if ($("#togglePage").text() == "Collapse schedule"){
+        $("#togglePage").text("Show complete schedule");
+    } else {
+         $("#togglePage").text("Collapse schedule");
+    }
+    
 });
 
 var divClone = $("#document").clone(true);
