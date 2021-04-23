@@ -23,7 +23,7 @@ body {
 }
 
 .header{
-    background-color: red;
+    background-color: #e10600;
     color: white;
     text-align: center;
     margin: 0;
@@ -32,7 +32,7 @@ body {
 }
 
 footer{
-    background-color: red;
+    background-color: black;
     color: white;
     padding: 20px 0px 20px 0px;
     margin: 0;
@@ -41,7 +41,7 @@ footer{
 }
 
 footer a{
-    color: orange;
+    color: #fff037;
     text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ p.attrib{
 .time-btn{
     float: right;
     margin: 10px 0px 10px 50px;
-    background-color: red;
+    background-color: #e10600;
     padding: 10px;
     color: white;
     border: none;

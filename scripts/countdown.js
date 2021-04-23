@@ -1,7 +1,7 @@
 // timer function to show the countdown
 startClock();
 $("#reset").attr("disabled", true);
-$("#reset").css("backgroundColor","grey");
+$("#reset").css("backgroundColor","#6a6a6b");
 
 // function to change the scale of the page so that the user can read the entire 
 // table without scrolling
@@ -73,8 +73,8 @@ function showLocalTime(){
 $("#localTime").click(function(){
     showLocalTime();
     $("#localTime").attr("disabled", true);
-    $("#localTime").css("backgroundColor","grey");
-    $("#reset").css("backgroundColor","red");
+    $("#localTime").css("backgroundColor","#6a6a6b");
+    $("#reset").css("backgroundColor","#e10600");
     $("#reset").attr("disabled", false);
 });
 
