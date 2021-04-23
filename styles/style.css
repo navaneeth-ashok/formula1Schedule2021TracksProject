@@ -20,10 +20,10 @@ body {
     margin:0 auto;
     padding: 30px 25px 30px 25px;
     background: whitesmoke;
-    
 }
+
 .header{
-    background-color: red;
+    background-color: #e10600;
     color: white;
     text-align: center;
     margin: 0;
@@ -32,15 +32,16 @@ body {
 }
 
 footer{
-    background-color: red;
+    background-color: black;
     color: white;
     padding: 20px 0px 20px 0px;
     margin: 0;
     text-align: center;
+    bottom: 0;
 }
 
 footer a{
-    color: orange;
+    color: #fff037;
     text-decoration: none;
 }
 
@@ -87,6 +88,8 @@ img{
     max-width: 100%;
     margin: 0;
     padding: 0;
+    display: block;
+    width: 100%;
 }
 
 table{
@@ -147,12 +150,13 @@ p.attrib{
 .time-btn{
     float: right;
     margin: 10px 0px 10px 50px;
-    background-color: red;
+    background-color: #e10600;
     padding: 10px;
     color: white;
     border: none;
     border-radius: 5px;
 }
+
 @media screen and (max-width: 560px){
     
     .owl-prev{
@@ -163,10 +167,17 @@ p.attrib{
         top: 175px;
     }
     
-        .schedule-table th:nth-child(3) {
-       display: none;
+    .time-btn{
+        margin-top: 0;
     }
-    .schedule-table td:nth-child(3) {
-       display: none;
+    
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li{
+        margin: 0;
+        display: block;
     }
 }
