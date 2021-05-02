@@ -2,6 +2,7 @@
 startClock();
 $("#reset").attr("disabled", true);
 $("#reset").css("backgroundColor","#6a6a6b");
+var localTime =  false;
 
 // function to change the scale of the page so that the user can read the entire 
 // table without scrolling
@@ -19,12 +20,16 @@ function requestDesktopSite(){
 function raceCountDown(){
     var raceTimes = document.getElementsByClassName("race_time");
     var myTimes = document.getElementsByClassName("my_time");
-    
+        
     for(var i=0; i < raceTimes.length; i++){
         var raceTime = new Date(raceTimes[i].innerHTML);
         var date = new Date(); 
         var now_utc =  Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-    //    console.log(raceTime-now_utc);
+        if(localTime == false)
+            {
+                raceTime = raceTime.toString() + " UTC";
+                raceTime = new Date(raceTime);
+        }
         var seconds = Math.floor((raceTime-now_utc)/1000);
         if (seconds > 1){
             var minutes = Math.floor(seconds/60);
@@ -66,6 +71,7 @@ function showLocalTime(){
         raceTimes[i].innerHTML= localDate;
         $("#heading-time").text("Race Start Time - Local");
     }
+    localTime = true;
 }
 
 // jQuery function to toggle between the active/disabled state of the buttons
